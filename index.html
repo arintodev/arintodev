@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-zinc-900 text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>arinto.dev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Space Grotesk', monospace;
+      letter-spacing: 0.025em;
+      background-color: #111111;
+    }
+
+    a {
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #e11d48; /* red-600 */
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center px-6">
+
+  <main class="text-center max-w-3xl">
+    <h1 class="text-4xl md:text-6xl font-bold uppercase tracking-wide text-white">
+      ARINTO<span class="text-lime-500">.DEV</span>
+    </h1>
+
+    <p class="mt-4 text-zinc-400 text-lg tracking-wide">
+      I’m a software developer passionate about building fast, elegant, and impactful digital experiences.
+    </p>
+    
+    <p class="mt-4 text-zinc-400 text-lg tracking-wide">
+      Welcome to my space on the web — <strong>arinto.dev</strong>
+    </p>
+
+    <nav class="mt-8 flex justify-center gap-6 text-sm uppercase tracking-wider text-zinc-500">
+      <a href="https://github.com/arinto" class="hover:text-lime-500">GitHub</a>
+      <a href="https://linkedin.com/in/arinto" class="hover:text-lime-500">LinkedIn</a>
+      <a href="mailto:arinto@devmail.com" class="hover:text-lime-500">Email</a>
+    </nav>
+
+    <div class="mt-10">
+      <a href="#contact" class="inline-block border border-zinc-700 px-6 py-2 uppercase tracking-widest hover:bg-zinc-800 hover:border-lime-500 hover:text-lime-500 transition">
+        Let's Connect
+      </a>
+    </div>
+  </main>
+
+  <footer class="mt-20 text-zinc-600 text-xs uppercase tracking-widest">
+    &copy; <span id="year"></span> Arinto.dev
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
